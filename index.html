@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+    rel="stylesheet">
+  <title>index</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/gallery.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/bower_components/nanum-barun-gothic/nanumbarungothic.css" />
+  <link rel="stylesheet" href="./assets/css/example.css" />
+  <!--[if lt IE 9]>  
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+
+    }
+
+
+    .wrap {
+      height: 100vh;
+
+    }
+
+    .wrap {
+      --text-color: hsl(0 95% 60%);
+      --bg-color: hsl(0 0% 100%);
+      --bg-size: 200px;
+      display: grid;
+      place-items: center;
+      place-content: center;
+      grid-template-areas: "body";
+      overflow: hidden;
+
+      background-color: var(--bg-color);
+    }
+
+    .wrap::before {
+      --size: 250vh;
+      grid-area: body;
+      content: "";
+      inline-size: var(--size);
+      block-size: 100vh;
+      background-image: url("./assets/images/background.svg");
+      background-size: var(--bg-size);
+      background-repeat: repeat;
+      /* transform: rotate(45deg); */
+      /* opacity: 0.5; */
+      animation: bg 6s linear infinite;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .wrap::before {
+        animation-duration: 0s;
+      }
+    }
+
+    @keyframes bg {
+      to {
+        background-position: 0 calc(var(--bg-size) * -1);
+      }
+    }
+
+    .text {
+      grid-area: body;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      font-size: clamp(1rem, 10vmin, 6rem);
+    }
+
+    .heading span {
+      display: block;
+      /* text-transform: uppercase; */
+    }
+
+    .heading span.filled {
+      color: #fff;
+    }
+
+    .heading span:not(.filled) {
+      --stroke: min(0.25vmin, 2px) var(--text-color);
+      color: var(--bg-color);
+      -webkit-text-stroke: var(--stroke);
+      text-stroke: var(--stroke);
+    }
+
+    .subheading {
+      position: relative;
+      margin-block-start: 1rem;
+      margin-inline-start: auto;
+      font-size: 0.228em;
+      color: #fff;
+    }
+
+    .subheadingname {
+      position: relative;
+      margin-block-start: 1rem;
+      margin-inline-start: auto;
+      font-size: 1rem;
+      color: #4b4b4b;
+    }
+
+
+
+    .name {
+      margin-top: 1%;
+      font-size: 1.2rem;
+      letter-spacing: 0.1rem;
+      color: #5B5B5B;
+      /* font-family: 'Noto Sans TC'; */
+    }
+
+    .aboutTitle {
+      --stroke: min(0.25vmin, 2px) var(--text-color);
+      color: #5B5B5B;
+      font-size: clamp(1rem, 10vmin, 2rem);
+      -webkit-text-stroke: var(--stroke);
+      text-stroke: var(--stroke);
+      margin-top: 10%;
+    }
+
+    .desc p {
+      letter-spacing: 0.1rem;
+
+      margin: 0 auto;
+
+    }
+
+    .fontBig {
+      font-weight: 500;
+      font-size: 18px;
+      position: relative;
+      z-index: 1;
+
+    }
+
+    .tool {
+      border-radius: 20px;
+      border: 2px solid #99BECF;
+      width: 100px;
+      margin: 0 auto !important;
+      margin-top: 3.5rem !important;
+      color: #99BECF;
+      font-weight: bold;
+
+    }
+
+    .toolIcon {
+      font-size: 16px;
+      line-height: 30px;
+      color: #fff;
+    }
+
+    .toolSize {
+      width: 30px;
+      height: 30px;
+      margin: 1%;
+      margin-top: 0;
+      /* background: #fff; */
+      /* border-radius: 50%; */
+
+    }
+
+    .markcolor {
+      color: #5B5B5B;
+      width: fit-content;
+      margin: 0 auto;
+      /* border-bottom: 3px solid #ffb7a4; */
+
+    }
+
+    .markcolorLine {
+      border: 3px solid #ffb7a4;
+      width: 241.72px;
+      margin: 0 auto;
+      margin-top: -10px;
+      position: absolute;
+    }
+
+    .titleLine {
+      border: 3px solid #ffb7a4;
+      width: 241.72px;
+      margin: 0 auto;
+      margin-top: -10px;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <h4>Ying</h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#about">About</a></li>
+              <li class="scroll-to-section"><a href="#contact">Contact</a></li>
+              <li class="scroll-to-section"><a href="#design">Design</a></li>
+              <!-- <li class="scroll-to-section"><a href="#services">Hobby</a></li> -->
+
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+
+  <div class="wrap" id="top">
+    <div class="text">
+      <span class="heading" aria-hidden="true">
+
+        <span class="filled">Portfolio</span>
+        <!-- <span>Thank you</span>
+        <span>Thank you</span>
+        <span>Thank you</span> -->
+      </span>
+      <span class="subheading" aria-hidden="true">By Shih Ying Chung</span>
+    </div>
+  </div>
+  <!-- <div id="parallax-world-of-ugg">
+
+
+
+    <section>
+      <div class="parallax-one" id="top">
+
+
+      </div>
+    </section>
+
+    <section>
+      <div class="block">
+        <p><span class="first-character sc">I</span>n 1978, Brian Smith landed in Southern California with a bag of
+          sheepskin boots and hope. He fell in love with the sheepskin experience and was convinced the world would one
+          day share this love. The beaches of Southern California had long been an epicenter of a relaxed, casual
+          lifestyle, a lifestyle that Brian felt was a perfect fit for his brand. So he founded the UGG brand, began
+          selling his sheepskin boots and they were an immediate sensation. By the mid 1980's, the UGG brand became a
+          symbol of relaxed southern California culture, gaining momentum through surf shops and other shops up and down
+          the coast of California, from San Diego to Santa Cruz. UGG boots reached beyond the beach, popping up in big
+          cities and small towns all over, and in every level of society. Girls wore their surfer boyfriend's pair of
+          UGG boots like a letterman jacket. When winter came along, UGG boots were in ski shops and were seen in lodges
+          from Mammoth to Aspen.</p>
+        <p class="line-break margin-top-10"></p>
+        <p class="margin-top-10">The UGG brand began to symbolize those who embraced sport and a relaxed, active
+          lifestyle. More than that, an emotional connection and a true feeling of love began to grow for UGG boots,
+          just as Brian had envisioned. People didn't just like wearing UGG boots, they fell in love with them and
+          literally could not take them off. By the end of the 90's, celebrities and those in the fashion world took
+          notice of the UGG brand. A cultural shift occurred as well - people were embracing, and feeling empowered, by
+          living a more casual lifestyle and UGG became one of the symbols of this lifestyle. By 2000, a love that began
+          on the beaches had become an icon of casual style. It was at this time that the love for UGG grew in the east,
+          over the Rockies and in Chicago. In 2000, UGG Sheepskin boots were first featured on Oprah's Favorite Things®
+          and Oprah emphatically declared that she "LOOOOOVES her UGG boots." From that point on, the world began to
+          notice.</p>
+      </div>
+    </section>
+    <div class="js-fullheight d-flex justify-content-center align-items-center">
+      <div class="col-md-8 text text-center">
+        <div class="img mb-4" style="background-image: url(images/author.jpg);"></div>
+        <div class="desc">
+          <h2 class="subheading">Hello I'm</h2>
+          <h1 class="mb-4">Elen Henderson</h1>
+          <p class="mb-4">I am A Blogger Far far away, behind the word mountains, far from the countries Vokalia and
+            Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
+            Semantics, a large language ocean.</p>
+          <p><a href="#" class="btn-custom">More About Me <span class="ion-ios-arrow-forward"></span></a></p>
+        </div>
+      </div>
+    </div>
+
+
+  </div> -->
+
+  <div class=" about js-fullheight d-flex justify-content-center align-items-center" id="about">
+
+    <div class="col-md-8  text text-center">
+      <!-- <div class="aboutTitle">About</div> -->
+      <div class="img mb-2 mt-10" style="background-image: url(./assets/images/me.png);"></div>
+      <div class="desc">
+        <h2 class="subheadingname">Hello I'm Shih Ying&nbsp;&nbsp; <div class="name">鍾詩瀅</div>
+        </h2>
+
+
+        <div class="mb-4  markcolor " style=" margin-top: 1.5rem ">
+          <div class="fontBig">網頁切版| 平面設計 | 視覺設計</div>
+          <div class="markcolorLine "></div>
+
+
+
+
+        </div>
+
+        <p class="mb-4" style=" margin-top: 1.5rem ">2017-2020銘傳大學商業設計系</p>
+        <!-- <p class="mb-4" style=" margin-top: 1.5rem;margin-bottom: 0rem!important "></p> -->
+        <p class="mb-4 aboutContent" style=" margin-bottom: 0rem!important "> ・能手刻RWD響應式網頁</p>
+        <p class="mb-4 aboutContent" style=" margin-top: 0rem!important;margin-bottom: 0rem!important ">
+          ・JQuery、JS製作動態效果
+        </p>
+        <p class="mb-4 aboutContent" style=" margin-top: 0rem!important;margin-bottom: 0rem!important ">
+          ・熟悉CSS切版，能獨立完成
+        </p>
+        <p class="mb-4 aboutContent" style=" margin-bottom: 0rem!important "> ・了解Float、Flex的排版方式</p>
+        <!-- <p class="mb-4" style=" margin-top: 0rem!important;margin-bottom: 0rem!important "> 有基本後端的 PHP、MySQL語法知識 -->
+
+
+
+        <p class="mb-4  tool">使用工具</p>
+        <div class="mb-4 toolIcon" style=" margin-top: 2.5rem ;margin-bottom: 0rem!important ">
+          <svg class="toolSize " role="img" style=" fill:#1572B6;opacity: 0.7; " viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>CSS3</title>
+            <path
+              d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z" />
+          </svg>
+
+          <svg class="toolSize " role="img" viewBox="0 0 24 24" style=" fill:#7952B3;opacity: 0.7; "
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Bootstrap</title>
+            <path
+              d="M11.77 11.24H9.956V8.202h2.152c1.17 0 1.834.522 1.834 1.466 0 1.008-.773 1.572-2.174 1.572zm.324 1.206H9.957v3.348h2.231c1.459 0 2.232-.585 2.232-1.685s-.795-1.663-2.326-1.663zM24 11.39v1.218c-1.128.108-1.817.944-2.226 2.268-.407 1.319-.463 2.937-.42 4.186.045 1.3-.968 2.5-2.337 2.5H4.985c-1.37 0-2.383-1.2-2.337-2.5.043-1.249-.013-2.867-.42-4.186-.41-1.324-1.1-2.16-2.228-2.268V11.39c1.128-.108 1.819-.944 2.227-2.268.408-1.319.464-2.937.42-4.186-.045-1.3.968-2.5 2.338-2.5h14.032c1.37 0 2.382 1.2 2.337 2.5-.043 1.249.013 2.867.42 4.186.409 1.324 1.098 2.16 2.226 2.268zm-7.927 2.817c0-1.354-.953-2.333-2.368-2.488v-.057c1.04-.169 1.856-1.135 1.856-2.213 0-1.537-1.213-2.538-3.062-2.538h-4.16v10.172h4.181c2.218 0 3.553-1.086 3.553-2.876z" />
+          </svg>
+          </img>
+
+
+          <svg role="img" class="toolSize " style=" fill:#007ACC;opacity: 0.7; " viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Visual Studio Code</title>
+            <path
+              d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z" />
+          </svg>
+
+          <svg role="img" class="toolSize " style=" fill:#0769AD;opacity: 0.7; " viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>jQuery</title>
+            <path
+              d="M1.525 5.87c-2.126 3.054-1.862 7.026-.237 10.269.037.079.078.154.118.229.023.052.049.1.077.15.013.027.031.056.047.082.026.052.054.102.081.152l.157.266c.03.049.057.097.09.146.056.094.12.187.178.281.026.04.05.078.079.117a6.368 6.368 0 00.31.445c.078.107.156.211.24.315.027.038.058.076.086.115l.22.269c.028.03.055.067.084.099.098.118.202.233.306.35l.005.006a3.134 3.134 0 00.425.44c.08.083.16.165.245.245l.101.097c.111.105.223.209.34.309.002 0 .003.002.005.003l.057.05c.102.089.205.178.31.26l.125.105c.085.068.174.133.26.2l.137.105c.093.07.192.139.287.207.035.025.07.05.106.073l.03.023.28.185.12.08c.148.094.294.184.44.272.041.02.084.044.123.068.108.062.22.125.329.183.06.034.122.063.184.094.075.042.153.083.234.125a.324.324 0 01.056.023c.033.015.064.031.096.047.12.06.245.118.375.175.024.01.05.02.076.034.144.063.289.123.438.182.034.01.07.027.105.04.135.051.274.103.411.152l.05.018c.154.052.305.102.46.15.036.01.073.023.111.033.16.048.314.105.474.137 10.273 1.872 13.258-6.177 13.258-6.177-2.508 3.266-6.958 4.127-11.174 3.169-.156-.036-.312-.086-.47-.132a13.539 13.539 0 01-.567-.182l-.062-.024c-.136-.046-.267-.097-.4-.148a1.615 1.615 0 00-.11-.04c-.148-.06-.29-.121-.433-.184-.031-.01-.057-.024-.088-.036a23.44 23.44 0 01-.362-.17 1.485 1.485 0 01-.106-.052c-.094-.044-.188-.095-.28-.143a3.947 3.947 0 01-.187-.096c-.114-.06-.227-.125-.34-.187-.034-.024-.073-.044-.112-.066a15.922 15.922 0 01-.439-.27 2.107 2.107 0 01-.118-.078 6.01 6.01 0 01-.312-.207c-.035-.023-.067-.048-.103-.073a9.553 9.553 0 01-.295-.212c-.042-.034-.087-.066-.132-.1-.088-.07-.177-.135-.265-.208l-.118-.095a10.593 10.593 0 01-.335-.28.258.258 0 00-.037-.031l-.347-.316-.1-.094c-.082-.084-.166-.164-.25-.246l-.098-.1a9.081 9.081 0 01-.309-.323l-.015-.016c-.106-.116-.21-.235-.313-.355-.027-.03-.053-.064-.08-.097l-.227-.277a21.275 21.275 0 01-.34-.449C2.152 11.79 1.306 7.384 3.177 3.771m4.943-.473c-1.54 2.211-1.454 5.169-.254 7.508a9.111 9.111 0 00.678 1.133c.23.33.484.721.793.988.107.122.223.24.344.36l.09.09c.114.11.232.217.35.325l.016.013a9.867 9.867 0 00.414.342c.034.023.063.05.096.073.14.108.282.212.428.316l.015.009c.062.045.128.086.198.13.028.018.06.042.09.06.106.068.21.132.318.197.017.007.032.016.048.023.09.055.188.108.282.157.033.02.065.035.1.054.066.033.132.068.197.102l.032.014c.135.067.273.129.408.19.034.014.063.025.092.039.111.048.224.094.336.137.05.017.097.037.144.052.102.038.21.073.31.108l.14.045c.147.045.295.104.449.13C22.164 17.206 24 11.098 24 11.098c-1.653 2.38-4.852 3.513-8.261 2.628a8.04 8.04 0 01-.449-.13c-.048-.014-.09-.029-.136-.043-.104-.036-.211-.07-.312-.109l-.144-.054c-.113-.045-.227-.087-.336-.135-.034-.015-.065-.025-.091-.04-.14-.063-.281-.125-.418-.192l-.206-.107-.119-.06a5.673 5.673 0 01-.265-.15.62.62 0 01-.062-.035c-.106-.066-.217-.13-.318-.198-.034-.019-.065-.042-.097-.062l-.208-.136c-.144-.1-.285-.208-.428-.313-.032-.029-.063-.053-.094-.079-1.499-1.178-2.681-2.79-3.242-4.613-.59-1.897-.46-4.023.56-5.75m4.292-.147c-.909 1.334-.996 2.99-.37 4.46.665 1.563 2.024 2.79 3.608 3.37.065.025.128.046.196.07l.088.027c.092.03.185.063.28.084 4.381.845 5.567-2.25 5.886-2.704-1.043 1.498-2.792 1.857-4.938 1.335a4.85 4.85 0 01-.516-.16 6.352 6.352 0 01-.618-.254 6.53 6.53 0 01-1.082-.66c-1.922-1.457-3.113-4.236-1.859-6.5" />
+          </svg>
+
+          <svg role="img" class="toolSize " style=" fill:#4479A1;opacity: 0.7;" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>MySQL</title>
+            <path
+              d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.153zM5.77 18.695h-.927a50.854 50.854 0 00-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 00-.195 4.41H0c.055-1.966.192-3.81.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095c.242 2.015.384 3.86.428 5.53zm4.017-4.08c-.378 2.045-.876 3.533-1.492 4.46-.482.716-1.01 1.073-1.583 1.073-.153 0-.34-.046-.566-.138v-.494c.11.017.24.026.386.026.268 0 .483-.075.647-.222.197-.18.295-.382.295-.605 0-.155-.077-.47-.23-.944L6.23 14.615h.91l.727 2.36c.164.536.233.91.205 1.123.4-1.064.678-2.227.835-3.483zm12.325 4.08h-2.63v-5.53h.885v4.85h1.745zm-3.32.135l-1.016-.5c.09-.076.177-.158.255-.25.433-.506.648-1.258.648-2.253 0-1.83-.718-2.746-2.155-2.746-.704 0-1.254.232-1.65.697-.43.508-.646 1.256-.646 2.245 0 .972.19 1.686.574 2.14.35.41.877.615 1.583.615.264 0 .506-.033.725-.098l1.325.772.36-.622zM15.5 17.588c-.225-.36-.337-.94-.337-1.736 0-1.393.424-2.09 1.27-2.09.443 0 .77.167.977.5.224.362.336.936.336 1.723 0 1.404-.424 2.108-1.27 2.108-.445 0-.77-.167-.978-.5zm-1.658-.425c0 .47-.172.856-.516 1.156-.344.3-.803.45-1.384.45-.543 0-1.064-.172-1.573-.515l.237-.476c.438.22.833.328 1.19.328.332 0 .593-.073.783-.22a.754.754 0 00.3-.615c0-.33-.23-.61-.648-.845-.388-.213-1.163-.657-1.163-.657-.422-.307-.632-.636-.632-1.177 0-.45.157-.81.47-1.085.315-.278.72-.415 1.22-.415.512 0 .98.136 1.4.41l-.213.476a2.726 2.726 0 00-1.064-.23c-.283 0-.502.068-.654.206a.685.685 0 00-.248.524c0 .328.234.61.666.85.393.215 1.187.67 1.187.67.433.305.648.63.648 1.168zm9.382-5.852c-.535-.014-.95.04-1.297.188-.1.04-.26.04-.274.167.055.053.063.14.11.214.08.134.218.313.346.407.14.11.28.216.427.31.26.16.555.255.81.416.145.094.293.213.44.313.073.05.12.14.214.172v-.02c-.046-.06-.06-.147-.105-.214-.067-.067-.134-.127-.2-.193a3.223 3.223 0 00-.695-.675c-.214-.146-.682-.35-.77-.595l-.013-.014c.146-.013.32-.066.46-.106.227-.06.435-.047.67-.106.106-.027.213-.06.32-.094v-.06c-.12-.12-.21-.283-.334-.395a8.867 8.867 0 00-1.104-.823c-.21-.134-.476-.22-.697-.334-.08-.04-.214-.06-.26-.127-.12-.146-.19-.34-.275-.514a17.69 17.69 0 01-.547-1.163c-.12-.262-.193-.523-.34-.763-.69-1.137-1.437-1.826-2.586-2.5-.247-.14-.543-.2-.856-.274-.167-.008-.334-.02-.5-.027-.11-.047-.216-.174-.31-.235-.38-.24-1.364-.76-1.644-.072-.18.434.267.862.422 1.082.115.153.26.328.34.5.047.116.06.235.107.356.106.294.207.622.347.897.073.14.153.287.247.413.054.073.146.107.167.227-.094.136-.1.334-.154.5-.24.757-.146 1.693.194 2.25.107.166.362.534.703.393.3-.12.234-.5.32-.835.02-.08.007-.133.048-.187v.015c.094.188.188.367.274.555.206.328.566.668.867.895.16.12.287.328.487.402v-.02h-.015c-.043-.058-.1-.086-.154-.133a3.445 3.445 0 01-.35-.4 8.76 8.76 0 01-.747-1.218c-.11-.21-.202-.436-.29-.643-.04-.08-.04-.2-.107-.24-.1.146-.247.273-.32.453-.127.288-.14.642-.188 1.01-.027.007-.014 0-.027.014-.214-.052-.287-.274-.367-.46-.2-.475-.233-1.238-.06-1.785.047-.14.247-.582.167-.716-.042-.127-.174-.2-.247-.303a2.478 2.478 0 01-.24-.427c-.16-.374-.24-.788-.414-1.162-.08-.173-.22-.354-.334-.513-.127-.18-.267-.307-.368-.52-.033-.073-.08-.194-.027-.274.014-.054.042-.075.094-.09.088-.072.335.022.422.062.247.1.455.194.662.334.094.066.195.193.315.226h.14c.214.047.455.014.655.073.355.114.675.28.962.46a5.953 5.953 0 012.085 2.286c.08.154.115.295.188.455.14.33.313.663.455.982.14.315.275.636.476.897.1.14.502.213.682.286.133.06.34.115.46.188.23.14.454.3.67.454.11.076.443.243.463.378z" />
+          </svg>
+
+          <svg role="img" class="toolSize " style=" fill: #777BB4;opacity: 0.7;" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>PHP</title>
+            <path
+              d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.523-.29-1.047-.29zM12 5.688C5.373 5.688 0 8.514 0 12s5.373 6.313 12 6.313S24 15.486 24 12c0-3.486-5.373-6.312-12-6.312zm-3.26 7.451c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164H5.357l-.327 1.681H3.652l1.23-6.326h2.65c.797 0 1.378.209 1.744.628.366.418.476 1.002.33 1.752a2.836 2.836 0 0 1-.305.847c-.143.255-.33.49-.561.703zm4.024.715l.543-2.799c.063-.318.039-.536-.068-.651-.107-.116-.336-.174-.687-.174H11.46l-.704 3.625H9.388l1.23-6.327h1.367l-.327 1.682h1.218c.767 0 1.295.134 1.586.401s.378.7.263 1.299l-.572 2.944h-1.389zm7.597-2.265a2.782 2.782 0 0 1-.305.847c-.143.255-.33.49-.561.703a2.44 2.44 0 0 1-.917.551c-.336.108-.765.164-1.286.164h-1.18l-.327 1.682h-1.378l1.23-6.326h2.649c.797 0 1.378.209 1.744.628.366.417.477 1.001.331 1.751zM17.766 10.207h-.943l-.516 2.648h.838c.557 0 .971-.105 1.242-.314.272-.21.455-.559.551-1.049.092-.47.049-.802-.125-.995s-.524-.29-1.047-.29z" />
+          </svg>
+        </div>
+        <div class="mb-4 toolIcon" style=" margin-top: 0.5rem ;margin-bottom: 0rem!important ">
+
+          <svg role="img" class="toolSize " style=" fill:    #FF9A00;opacity: 0.7;" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Adobe Illustrator</title>
+            <path
+              d="M10.53 10.73c-.1-.31-.19-.61-.29-.92-.1-.31-.19-.6-.27-.89-.08-.28-.15-.54-.22-.78h-.02c-.09.43-.2.86-.34 1.29-.15.48-.3.98-.46 1.48-.14.51-.29.98-.44 1.4h2.54c-.06-.211-.14-.46-.23-.721-.09-.269-.18-.559-.27-.859zM19.75.3H4.25C1.9.3 0 2.2 0 4.55v14.9c0 2.35 1.9 4.25 4.25 4.25h15.5c2.35 0 4.25-1.9 4.25-4.25V4.55C24 2.2 22.1.3 19.75.3zM14.7 16.83h-2.091c-.069.01-.139-.04-.159-.11l-.82-2.38H7.91l-.76 2.35c-.02.09-.1.15-.19.141H5.08c-.11 0-.14-.061-.11-.18L8.19 7.38c.03-.1.06-.21.1-.33.04-.21.06-.43.06-.65-.01-.05.03-.1.08-.11h2.59c.08 0 .12.03.13.08l3.65 10.3c.03.109 0 .16-.1.16zm3.4-.15c0 .11-.039.16-.129.16H16.01c-.1 0-.15-.061-.15-.16v-7.7c0-.1.041-.14.131-.14h1.98c.09 0 .129.05.129.14v7.7zm-.209-9.03c-.231.24-.571.37-.911.35-.33.01-.65-.12-.891-.35-.23-.25-.35-.58-.34-.92-.01-.34.12-.66.359-.89.242-.23.562-.35.892-.35.391 0 .689.12.91.35.22.24.34.56.33.89.01.34-.11.67-.349.92z" />
+          </svg>
+
+          <svg role="img" class="toolSize " style=" fill:  #FF3366;opacity: 0.7;" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Adobe InDesign</title>
+            <path
+              d="M4.25.3C1.9.3 0 2.2 0 4.55v14.9c0 2.35 1.9 4.25 4.25 4.25h15.5c2.35 0 4.25-1.9 4.25-4.25V4.55C24 2.2 22.1.3 19.75.3zm11.31 5.13h2.03c.05-.01.09.03.1.07v9.54c0 .18.01.38.02.6.02.21.03.41.04.58 0 .07-.03.13-.1.16-.52.22-1.07.38-1.63.48-.5.09-1.02.14-1.54.14-.74.01-1.48-.14-2.15-.45-.63-.29-1.15-.77-1.51-1.36-.37-.61-.55-1.37-.55-2.28-.01-.74.18-1.47.55-2.11.38-.65.93-1.19 1.59-1.55.7-.39 1.54-.58 2.53-.58.05 0 .12 0 .21.01s.19.01.31.02V5.54c0-.07.03-.11.1-.11zm-8.93.86h1.95c.06-.01.12.03.13.1.01.01.01.02.01.03v10.26c0 .11-.05.16-.14.16H6.62c-.09 0-.13-.05-.13-.16V6.42c0-.09.05-.13.14-.13zm8.23 4.24c-.39 0-.78.08-1.13.26-.34.17-.63.42-.85.74-.22.32-.33.75-.33 1.27-.01.35.05.7.17 1.03.1.27.25.51.45.71.19.18.42.32.68.4.27.09.55.13.83.13.15 0 .29-.01.42-.02.13.01.25-.01.36-.05v-4.4c-.09-.02-.18-.04-.27-.05-.11-.01-.22-.02-.33-.02z" />
+          </svg>
+
+          <svg role="img" class="toolSize " style=" fill: #31A8FF;opacity: 0.7;" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Adobe Photoshop</title>
+            <path
+              d="M9.85 8.42c-.37-.15-.77-.21-1.18-.2-.26 0-.49 0-.68.01-.2-.01-.34 0-.41.01v3.36c.14.01.27.02.39.02h.53c.39 0 .78-.06 1.15-.18.32-.09.6-.28.82-.53.21-.25.31-.59.31-1.03.01-.31-.07-.62-.23-.89-.17-.26-.41-.46-.7-.57zM19.75.3H4.25C1.9.3 0 2.2 0 4.55v14.899c0 2.35 1.9 4.25 4.25 4.25h15.5c2.35 0 4.25-1.9 4.25-4.25V4.55C24 2.2 22.1.3 19.75.3zm-7.391 11.65c-.399.56-.959.98-1.609 1.22-.68.25-1.43.34-2.25.34-.24 0-.4 0-.5-.01s-.24-.01-.43-.01v3.209c.01.07-.04.131-.11.141H5.52c-.08 0-.12-.041-.12-.131V6.42c0-.07.03-.11.1-.11.17 0 .33 0 .56-.01.24-.01.49-.01.76-.02s.56-.01.87-.02c.31-.01.61-.01.91-.01.82 0 1.5.1 2.06.31.5.17.96.45 1.34.82.32.32.57.71.73 1.14.149.42.229.85.229 1.3.001.86-.199 1.57-.6 2.13zm7.091 3.89c-.28.4-.671.709-1.12.891-.49.209-1.09.318-1.811.318-.459 0-.91-.039-1.359-.129-.35-.061-.7-.17-1.02-.32-.07-.039-.121-.109-.111-.189v-1.74c0-.029.011-.07.041-.09.029-.02.06-.01.09.01.39.23.8.391 1.24.49.379.1.779.15 1.18.15.38 0 .65-.051.83-.141.16-.07.27-.24.27-.42 0-.141-.08-.27-.24-.4-.16-.129-.489-.279-.979-.471-.51-.18-.979-.42-1.42-.719-.31-.221-.569-.51-.761-.85-.159-.32-.239-.67-.229-1.021 0-.43.12-.84.341-1.21.25-.4.619-.72 1.049-.92.469-.239 1.059-.349 1.769-.349.41 0 .83.03 1.24.09.3.04.59.12.86.23.039.01.08.05.1.09.01.04.02.08.02.12v1.63c0 .04-.02.08-.05.1-.09.02-.14.02-.18 0-.3-.16-.62-.27-.96-.34-.37-.08-.74-.13-1.12-.13-.2-.01-.41.02-.601.07-.129.03-.24.1-.31.2-.05.08-.08.18-.08.27s.04.18.101.26c.09.11.209.2.34.27.229.12.47.23.709.33.541.18 1.061.43 1.541.73.33.209.6.49.789.83.16.318.24.67.23 1.029.011.471-.129.94-.389 1.331z" />
+          </svg>
+
+          <svg role="img" class="toolSize " style=" fill: #FF61F6;opacity: 0.7;" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Adobe Dreamweaver</title>
+            <path
+              d="M6.69 8.4c-.43-.13-.87-.2-1.32-.19-.2 0-.37 0-.51.01-.14 0-.3.01-.47.02v6.67c.11 0 .21 0 .31.01.09.01.19.01.28.02.1.011.21.011.33.011.46.01.92-.07 1.36-.229.4-.141.75-.371 1.05-.681.3-.319.53-.7.67-1.11.16-.479.24-.99.24-1.5.01-.48-.07-.96-.23-1.41C8.12 9.24 7.49 8.64 6.69 8.4zM19.75.3H4.25C1.9.3 0 2.2 0 4.55v14.9c0 2.35 1.9 4.25 4.25 4.25h15.5c2.35 0 4.25-1.9 4.25-4.25V4.55C24 2.2 22.1.3 19.75.3zm-9.24 13.13c-.19.561-.48 1.08-.86 1.541-.35.42-.77.779-1.23 1.069-.45.28-.95.489-1.47.63-.5.13-1.02.2-1.54.2H4.28c-.4 0-.78 0-1.12-.011-.35-.01-.61-.01-.78-.02-.07 0-.1-.061-.1-.16V6.44c-.01-.06.04-.12.1-.13h.01c.15-.01.38-.02.67-.02.3-.01.64-.01 1.04-.02s.82-.01 1.27-.01c1.22 0 2.24.22 3.04.66.77.41 1.4 1.04 1.81 1.81.4.77.6 1.65.6 2.65.01.7-.09 1.39-.31 2.05zm9.42 3.24c-.01.04-.029.08-.06.109 0 .051-.04.07-.091.061H17.91c-.04.01-.09-.01-.12-.04-.03-.04-.05-.079-.06-.12-.19-.8-.351-1.52-.48-2.13-.13-.62-.24-1.14-.32-1.569-.08-.431-.15-.791-.209-1.09-.051-.3-.101-.55-.131-.76h-.01c-.1.44-.189.87-.28 1.28-.079.41-.18.83-.28 1.25-.1.42-.209.88-.34 1.38-.119.5-.26 1.05-.41 1.64-.02.11-.069.16-.16.16h-1.87c-.051.01-.1-.01-.141-.029-.029-.031-.05-.07-.07-.11L11.08 8.97c-.03-.09.01-.13.12-.13h1.89c.09 0 .141.03.15.1.199.88.369 1.64.5 2.28.13.64.24 1.18.31 1.629.07.45.14.82.19 1.101.05.28.09.521.119.7h.031c.02-.16.039-.311.069-.471.04-.189.09-.439.149-.75.061-.31.131-.67.221-1.09s.189-.9.311-1.46c.109-.55.27-1.18.459-1.89 0-.04.021-.09.041-.13.01-.02.049-.03.109-.03h1.96c.06 0 .09.04.101.11.17.73.31 1.37.43 1.92.109.55.21 1.04.3 1.47.08.42.149.79.19 1.09.039.311.09.561.129.77.031.17.061.34.07.511h.03c.05-.2.09-.44.13-.71.04-.271.09-.57.16-.91.061-.34.13-.71.21-1.12.069-.41.17-.86.28-1.37.109-.5.23-1.05.369-1.64.021-.09.061-.13.131-.13h1.75c.09 0 .119.05.1.14l-2.159 7.71z" />
+          </svg>
+
+          <svg role="img" class="toolSize " style=" fill: #FF61F6;opacity: 0.7;" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Adobe XD</title>
+            <path
+              d="M18.835.3H5.165A5.165 5.165 0 0 0 0 5.465v13.07A5.165 5.165 0 0 0 5.165 23.7h13.67A5.165 5.165 0 0 0 24 18.535V5.465A5.165 5.165 0 0 0 18.835.3zm-6.106 16.491h-2.287c-.16 0-.274-.006-.338-.113-.215-.419-.43-.835-.644-1.248a45.137 45.137 0 0 0-.684-1.264 66.961 66.961 0 0 1-.717-1.305h-.016a52.7 52.7 0 0 1-.668 1.288c-.23.429-.459.856-.684 1.28A54.85 54.85 0 0 1 6 16.693c-.044.097-.119.107-.227.107H3.568c-.043 0-.067.017-.072-.026a.166.166 0 0 1 .024-.113l3.107-5.105L3.6 6.438c-.033-.043-.038-.078-.016-.107a.115.115 0 0 1 .097-.04h2.27a.36.36 0 0 1 .145.024.292.292 0 0 1 .096.089c.193.43.408.859.644 1.288.236.429.475.853.716 1.272.241.419.464.843.668 1.272h.016c.213-.44.43-.869.652-1.288.222-.419.447-.84.676-1.264.231-.425.453-.847.668-1.264a.246.246 0 0 1 .064-.106.239.239 0 0 1 .129-.024h2.109a.093.093 0 0 1 .112.067.093.093 0 0 1-.031.094l.001.004-2.995 4.943 3.204 5.249c.021.037.026.08.016.121-.01.036-.047.012-.112.023zm7.681-.42a8.02 8.02 0 0 1-1.626.483 8.63 8.63 0 0 1-1.547.145 5.006 5.006 0 0 1-2.149-.45 3.421 3.421 0 0 1-1.506-1.361 4.348 4.348 0 0 1-.548-2.278 4.202 4.202 0 0 1 .548-2.109 4.018 4.018 0 0 1 1.595-1.545 5.139 5.139 0 0 1 2.737-.572c.086.005.188.013.306.024V5.536c0-.075.032-.113.097-.113h2.028a.086.086 0 0 1 .097.073.096.096 0 0 1 0 .024v9.517c0 .183.008.381.024.596.016.214.03.407.04.579a.163.163 0 0 1-.096.159zm-2.457-5.812c.09.009.179.025.266.048v4.395a1.634 1.634 0 0 1-.354.064 4.965 4.965 0 0 1-.419.016 2.656 2.656 0 0 1-.83-.129 1.714 1.714 0 0 1-.676-.402 1.973 1.973 0 0 1-.451-.708 2.83 2.83 0 0 1-.169-1.031 2.217 2.217 0 0 1 .33-1.272c.213-.316.504-.571.845-.741.35-.173.736-.262 1.127-.258.111.002.221.007.331.018z" />
+          </svg>
+
+          <svg role="img" class="toolSize " style=" fill: #F7DF1E;opacity: 0.7;" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>JavaScript</title>
+            <path
+              d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" />
+          </svg>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class=" contact js-fullheight d-flex justify-content-center " id="contact">
+    <div class="col-md-8  text text-center">
+      <!-- <div class="aboutTitle">About</div> -->
+
+      <div class="desc">
+
+
+
+
+
+
+
+        <div class="img mb-2 mt-10" style="background-image: url(./assets/images/line.jpg);">
+        </div>
+        <p class="mb-4 aboutContent" style=" margin-bottom: 0rem!important;margin-top: 1.5rem!important ">
+          0909-371-953</p>
+        <p class="mb-4 aboutContent" style=" margin-top: 0rem!important;margin-bottom: 0rem!important ">
+          nicole99618@gmail.com
+        </p>
+        <!-- <p class="mb-4 aboutContent" style=" margin-top: 0rem!important;margin-bottom: 0rem!important ">
+          ・熟悉CSS切版，能獨立完成
+        </p>
+        
+        <p class="mb-4 aboutContent" style=" margin-bottom: 0rem!important "> ・了解Float、Flex的排版方式</p> -->
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class=" design  " id="design">
+    <div class="gallerySpace"></div>
+    <ul class="gallery-items">
+      <li class="gallery-item  ">
+        <div class="gallery-contents">
+          <div class="thumbnail gallery-trigger"><img src="./assets/images/web2.svg" alt="" /></div>
+          <div class="title">Loop 音樂網站</div>
+
+        </div>
+        <div class="gallery-expander">
+          <div class="gallery-expander-contents">
+            <div class="gallery-trigger-close close">x</div>
+
+            <div class="col">
+              <div class="image"><img src="./assets/images/web2-2.svg" alt="" /></div>
+            </div>
+
+            <div class="col">
+              <div class="titleInner">Loop 音樂網站</div>
+              <div class="contents">
+                -個人獨立製作
+                <br>-電腦&手機(iphoneX)兩版
+                <br>-jQuery、js動態撰寫
+                <br>-網頁視覺排版配色設計、Adobe Xd切版 </div>
+              <button class="learnButton" onclick="window.open('https://shihying96.github.io/music-web/ ', '', );">Learn
+                More</button>
+            </div>
+
+          </div>
+        </div>
+      </li>
+      <li class="gallery-item ">
+        <div class="gallery-contents">
+          <div class="thumbnail gallery-trigger"><img src="./assets/images/web1.svg" alt="" /></div>
+          <div class="title">派樂星球 寵物電商網站</div>
+        </div>
+        <div class="gallery-expander">
+          <div class="gallery-expander-contents">
+            <div class="gallery-trigger-close close">x</div>
+
+            <div class="col">
+              <div class="image"><img src="./assets/images/web1-1.svg" alt="" /></div>
+            </div>
+
+            <div class="col">
+              <div class="titleInner">派樂星球 寵物電商網站</div>
+              <div class="contents">
+                -以團隊形式，完成一個簡易電商平台
+                <br>-能獨立完成RWD切版、用jQuery寫出動態效果
+                <br>-主要工作負責後端php連資料庫，有基礎後端php、MySQL知識
+                <br>-負責切版＆動態功能：網站公版（Navbar）、代遛服務頁、商品列表頁、專欄頁
+                &nbsp;&nbsp;&nbsp;<a
+                  style="color: rgb(124, 122, 122);text-decoration: underline !important;cursor: pointer;"
+                  onclick="window.open('https://shihying96.github.io/uiux-web-petlove-walking/', '', );">個人靜態切版連結</a>
+              </div>
+              <button class="learnButton"
+                onclick="window.open('https://drive.google.com/drive/u/0/folders/1ihU1Y2-a6EpswA8R9szN0_2KWKEROh1x ', '', );">Learn
+                More</button>
+
+            </div>
+          </div>
+      </li>
+
+      <li class="gallery-item ">
+        <div class="gallery-contents">
+          <div class="thumbnail gallery-trigger"><img src="./assets/images/web3.svg" alt="" /></div>
+          <div class="title">RWD切版練習</div>
+        </div>
+        <div class="gallery-expander">
+          <div class="gallery-expander-contents">
+            <div class="gallery-trigger-close close">x</div>
+
+            <div class="col">
+              <div class="image"><img src="./assets/images/web3-3.svg" alt="" /></div>
+            </div>
+
+            <div class="col">
+              <div class="titleInner">切版練習</div>
+              <div class="contents">
+                -利用線上既有網站進行切版練習
+                <br>-電腦、手機版兩種RWD製作
+                <br>-手刻 RWD 響應式網站
+
+              </div>
+              <button class="learnButton" onclick="window.open('https://shihying96.github.io/cake-web/ ', '', );">Learn
+                More</button>
+
+            </div>
+          </div>
+      </li>
+      <li class="gallery-item ">
+        <div class="gallery-contents">
+          <div class="thumbnail gallery-trigger"><img src="./assets/images/design3.png" alt="" /></div>
+          <div class="title">網站排版設計</div>
+        </div>
+        <div class="gallery-expander">
+          <div class="gallery-expander-contents">
+            <div class="gallery-trigger-close close">x</div>
+            <div class="col">
+              <div class="image"><img src="./assets/images/design4.png" alt="" /></div>
+            </div>
+            <div class="col">
+              <div class="titleInner">網站排版設計</div>
+              <div class="contents">
+                滑板網站排版設計
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="gallery-item ">
+        <div class="gallery-contents">
+          <div class="thumbnail gallery-trigger"><img src="./assets/images/design5.svg" alt="" /></div>
+          <div class="title">切版練習</div>
+        </div>
+        <div class="gallery-expander">
+          <div class="gallery-expander-contents">
+            <div class="gallery-trigger-close close">x</div>
+            <div class="col">
+              <div class="image"><img src="./assets/images/design5.svg" alt="" /></div>
+            </div>
+            <div class="col">
+              <div class="titleInner">切版練習</div>
+              <div class="contents">
+                -利用線上既有網站進行切版練習
+                <br>-電腦版一版
+
+
+              </div>
+              <button class="learnButton"
+                onclick="window.open('https://shihying96.github.io/ITRI-ICT-TechDay/', '', );">Learn
+                More</button>
+
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="gallery-item ">
+        <div class="gallery-contents">
+          <div class="thumbnail gallery-trigger"><img src="./assets/images/design1.svg" alt="" /></div>
+          <div class="title">UI Kit</div>
+        </div>
+        <div class="gallery-expander">
+          <div class="gallery-expander-contents">
+            <div class="gallery-trigger-close close">x</div>
+            <div class="col">
+              <div class="image"><img src="./assets/images/design1.svg" alt="" /></div>
+            </div>
+
+            <div class="col">
+              <div class="titleInner">UI Kit</div>
+              <div class="contents">
+                UI Kit設計
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="gallery-item ">
+        <div class="gallery-contents">
+          <div class="thumbnail gallery-trigger"><img src="./assets/images/design2.svg" alt="" /></div>
+          <div class="title">UI Kit</div>
+        </div>
+        <div class="gallery-expander">
+          <div class="gallery-expander-contents">
+            <div class="gallery-trigger-close close">x</div>
+            <div class="col">
+              <div class="image"><img src="./assets/images/design2.svg" alt="" /></div>
+            </div>
+            <div class="col">
+              <div class="titleInner">UI Kit</div>
+              <div class="contents">
+                UI Kit設計
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </li>
+
+
+      <li class="gallery-item ">
+        <div class="gallery-contents">
+          <div class="thumbnail gallery-trigger"><img src="./assets/images/design6.png" alt="" /></div>
+          <div class="title">治鬼堂 中藥包裝設計</div>
+        </div>
+        <div class="gallery-expander">
+          <div class="gallery-expander-contents">
+            <div class="gallery-trigger-close close">x</div>
+            <div class="col">
+              <div class="image"><img src="./assets/images/design7.png" alt="" /></div>
+            </div>
+            <div class="col">
+              <div class="titleInner">畢業專題-治鬼堂 中藥包裝設計</div>
+              <div class="contents">
+                主題概念是選擇六種現代人常出現的症狀:生氣鬼、愛哭鬼、<br>貪吃鬼、瞌睡鬼、冒失鬼、酒鬼，搭配能調理症狀的中藥配方，<br>來做設計。包裝部分為單盒包裝及組合包裝兩種包裝。中藥部分<br>為茶包設計及茶標籤設計。
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="gallery-item ">
+        <div class="gallery-contents">
+          <div class="thumbnail gallery-trigger"><img src="./assets/images/no.svg" alt="" /></div>
+          <div class="title">to be continued</div>
+        </div>
+        <!-- <div class="gallery-expander">
+          <div class="gallery-expander-contents">
+            <div class="gallery-trigger-close close">x</div>
+            <div class="col">
+              <div class="image"><img src="./assets/images/example/1.jpg" alt="" /></div>
+            </div>
+            <div class="col">
+              <div class="title">to be continued</div>
+              <div class="contents"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+            </div>
+          </div>
+        </div> -->
+      </li>
+      <li class="gallery-item ">
+        <div class="gallery-contents">
+          <div class="thumbnail gallery-trigger"><img src="./assets/images/no.svg" alt="" /></div>
+          <div class="title">to be continued</div>
+        </div>
+        <!-- <div class="gallery-expander">
+          <div class="gallery-expander-contents">
+            <div class="gallery-trigger-close close">x</div>
+            <div class="col">
+              <div class="image"><img src="./assets/images/example/1.jpg" alt="" /></div>
+            </div>
+            <div class="col">
+              <div class="title">to be continued</div>
+              <div class="contents"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+            </div>
+          </div>
+        </div> -->
+      </li>
+      <li class="gallery-item ">
+        <div class="gallery-contents">
+          <div class="thumbnail gallery-trigger"><img src="./assets/images/no.svg" alt="" /></div>
+          <div class="title">to be continued</div>
+        </div>
+        <!-- <div class="gallery-expander">
+          <div class="gallery-expander-contents">
+            <div class="gallery-trigger-close close">x</div>
+            <div class="col">
+              <div class="image"><img src="./assets/images/example/1.jpg" alt="" /></div>
+            </div>
+            <div class="col">
+              <div class="title">to be continued</div>
+              <div class="contents"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+            </div>
+          </div>
+        </div> -->
+      </li>
+      <li class="gallery-item ">
+        <div class="gallery-contents">
+          <div class="thumbnail gallery-trigger"><img src="./assets/images/no.svg" alt="" /></div>
+          <div class="title">to be continued</div>
+        </div>
+        <!-- <div class="gallery-expander">
+          <div class="gallery-expander-contents">
+            <div class="gallery-trigger-close close">x</div>
+            <div class="col">
+              <div class="image"><img src="./assets/images/example/1.jpg" alt="" /></div>
+            </div>
+            <div class="col">
+              <div class="title">to be continued</div>
+              <div class="contents"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+            </div>
+          </div>
+        </div> -->
+      </li>
+
+    </ul>
+
+
+  </div>
+
+  <div class="copyright text-center" style="background-color: #C4DCDE;">© Copyright ShihYing's Portfolio 2021.</div>
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="./assets/js/jquery.imagelistexpander.js"></script>
+  <script>
+    (function (global, $) {
+      $('.gallery-items').imagelistexpander({
+        prefix: "gallery-"
+
+      });
+    })(this, jQuery)
+  </script>
+
+
+</body>
+
+</html>
