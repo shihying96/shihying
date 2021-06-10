@@ -782,8 +782,10 @@
 
 
   </div>
-
-  <div class="copyright text-center" style="background-color: #C4DCDE;">© Copyright ShihYing's Portfolio 2021.</div>
+  <a href="#" id="gotop2" style="text-decoration: none;">
+    TOP
+  </a>
+  <!-- <div class="copyright text-center" style="background-color: #C4DCDE;">© Copyright ShihYing's Portfolio 2021.</div> -->
 
   <!-- Scripts -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -803,7 +805,26 @@
       });
     })(this, jQuery)
   </script>
+  <script>
+    $(function () {
+      /* 按下GoTop按鈕時的事件 */
+      $('#gotop2').click(function () {
+        $('html,body').animate({
+          scrollTop: 0
+        }, 'slow'); /* 返回到最頂上 */
+        return false;
+      });
 
+      /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('#gotop2').fadeIn();
+        } else {
+          $('#gotop2').fadeOut();
+        }
+      });
+    });
+  </script>
 
 </body>
 
