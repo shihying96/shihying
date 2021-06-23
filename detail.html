@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <title>details</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/bower_components/nanum-barun-gothic/nanumbarungothic.css" />
+    <link rel="stylesheet" href="./assets/css/example.css" />
+    <!--[if lt IE 9]>  
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+
+        .wrap {
+            height: 100vh;
+
+        }
+
+        .wrap {
+            --text-color: hsl(0 95% 60%);
+            --bg-color: hsl(0 0% 100%);
+            --bg-size: 200px;
+            display: grid;
+            place-items: center;
+            place-content: center;
+            grid-template-areas: "body";
+            overflow: hidden;
+
+            background-color: var(--bg-color);
+        }
+
+        .wrap::before {
+            --size: 250vh;
+            grid-area: body;
+            content: "";
+            inline-size: var(--size);
+            block-size: 100vh;
+            background-image: url("./assets/images/background.svg");
+            background-size: var(--bg-size);
+            background-repeat: repeat;
+            /* transform: rotate(45deg); */
+            /* opacity: 0.5; */
+            animation: bg 6s linear infinite;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .wrap::before {
+                animation-duration: 0s;
+            }
+        }
+
+        @keyframes bg {
+            to {
+                background-position: 0 calc(var(--bg-size) * -1);
+            }
+        }
+
+        .text {
+            grid-area: body;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            font-size: clamp(1rem, 10vmin, 6rem);
+        }
+
+        .heading span {
+            display: block;
+            /* text-transform: uppercase; */
+        }
+
+        .heading span.filled {
+            color: #fff;
+        }
+
+        .heading span:not(.filled) {
+            --stroke: min(0.25vmin, 2px) var(--text-color);
+            color: var(--bg-color);
+            -webkit-text-stroke: var(--stroke);
+            text-stroke: var(--stroke);
+        }
+
+        .subheading {
+            position: relative;
+            margin-block-start: 1rem;
+            margin-inline-start: auto;
+            font-size: 0.228em;
+            color: #fff;
+        }
+
+        .subheadingname {
+            position: relative;
+            margin-block-start: 1rem;
+            margin-inline-start: auto;
+            font-size: 1rem;
+            color: #4b4b4b;
+        }
+
+
+
+        .name {
+            margin-top: 1%;
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+            color: #5B5B5B;
+            /* font-family: 'Noto Sans TC'; */
+        }
+
+        .aboutTitle {
+            --stroke: min(0.25vmin, 2px) var(--text-color);
+            color: #5B5B5B;
+            font-size: clamp(1rem, 10vmin, 2rem);
+            -webkit-text-stroke: var(--stroke);
+            text-stroke: var(--stroke);
+            margin-top: 10%;
+        }
+
+        .desc p {
+            letter-spacing: 0.1rem;
+
+            margin: 0 auto;
+
+        }
+
+        .fontBig {
+            font-weight: 500;
+            font-size: 18px;
+            position: relative;
+            z-index: 1;
+
+        }
+
+        .tool {
+            border-radius: 20px;
+            border: 2px solid #99BECF;
+            width: 100px;
+            margin: 0 auto !important;
+            margin-top: 3.5rem !important;
+            color: #99BECF;
+            font-weight: bold;
+
+        }
+
+        .toolIcon {
+            font-size: 16px;
+            line-height: 30px;
+            color: #fff;
+        }
+
+        .toolSize {
+            width: 30px;
+            height: 30px;
+            margin: 1%;
+            margin-top: 0;
+            /* background: #fff; */
+            /* border-radius: 50%; */
+
+        }
+
+        .markcolor {
+            color: #5B5B5B;
+            width: fit-content;
+            margin: 0 auto;
+            /* border-bottom: 3px solid #ffb7a4; */
+
+        }
+
+        .markcolorLine {
+            border: 3px solid #ffb7a4;
+            width: 241.72px;
+            margin: 0 auto;
+            margin-top: -10px;
+            position: absolute;
+        }
+
+        .titleLine {
+            border: 3px solid #ffb7a4;
+            width: 241.72px;
+            margin: 0 auto;
+            margin-top: -10px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <h4>Ying</h4>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <!-- <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about">About</a></li>
+                            <li class="scroll-to-section"><a href="#contact">Contact</a></li>
+                            <li class="scroll-to-section"><a href="#design">Design</a></li>
+                            <!-- <li class="scroll-to-section"><a href="#services">Hobby</a></li> -->
+
+                        </ul> -->
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class=" about js-fullheight d-flex justify-content-center align-items-center" id="about">
+    </div>
+
+    <a href="#" id="gotop2" style="text-decoration: none;">
+        TOP
+    </a>
+    <!-- <div class="copyright text-center" style="background-color: #C4DCDE;">© Copyright ShihYing's Portfolio 2021.</div> -->
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="./assets/js/jquery.imagelistexpander.js"></script>
+    <script>
+        (function (global, $) {
+            $('.gallery-items').imagelistexpander({
+                prefix: "gallery-"
+
+            });
+        })(this, jQuery)
+    </script>
+    <script>
+        $(function () {
+            /* 按下GoTop按鈕時的事件 */
+            $('#gotop2').click(function () {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 'slow'); /* 返回到最頂上 */
+                return false;
+            });
+
+            /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#gotop2').fadeIn();
+                } else {
+                    $('#gotop2').fadeOut();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
