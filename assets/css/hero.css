@@ -265,7 +265,7 @@
 /* about */
 
 .about {
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #F3F0EB;
 
 }
@@ -318,6 +318,7 @@
         min-height: 120px;
         width: 120px;
         background-size: cover;
+        margin-top: 35%;
     }
 
     .contact .text .img {
