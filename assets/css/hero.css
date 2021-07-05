@@ -278,7 +278,7 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
-    margin-top: 4%;
+    margin-top: 10%;
     background-size: cover;
 }
 
@@ -312,6 +312,7 @@
 
 @media(max-width:900px) {
     .about .text .img {
+
         height: auto;
         /*取代 斷點900px以上設定的 350px高度，不然下方的最小高度500px會無效*/
         min-height: 120px;
@@ -320,6 +321,7 @@
     }
 
     .contact .text .img {
+        margin-top: 5%;
         height: auto;
         /*取代 斷點900px以上設定的 350px高度，不然下方的最小高度500px會無效*/
         min-height: 120px;
@@ -341,6 +343,6 @@
 
 
 .contact {
-    height: 50vh;
+    height: 20vh;
     background-color: #F3F0EB;
 }
