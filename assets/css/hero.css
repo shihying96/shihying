@@ -265,7 +265,7 @@
 /* about */
 
 .about {
-    /* height: 100vh; */
+    height: 130vh;
     background-color: #F3F0EB;
 
 }
@@ -305,9 +305,13 @@
 /* disign */
 
 .design {
-    height: 120vh;
+    /* height: 120vh; */
     background-color: #C4DCDE;
 
+}
+
+.hobby {
+    height: 120vh;
 }
 
 @media(max-width:900px) {
@@ -315,10 +319,10 @@
 
         height: auto;
         /*取代 斷點900px以上設定的 350px高度，不然下方的最小高度500px會無效*/
-        min-height: 120px;
-        width: 120px;
+        min-height: 110px;
+        width: 110px;
         background-size: cover;
-        margin-top: 35%;
+        margin-top: 45%;
     }
 
     .contact .text .img {

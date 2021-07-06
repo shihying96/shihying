@@ -8,6 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 
   <link
@@ -36,7 +37,9 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
   <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="assets/css/main.css" />
 
+  <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
   <style>
     * {
@@ -201,7 +204,7 @@
 
     .markcolorLine {
       border: 3px solid #ffb7a4;
-      width: 241.72px;
+      width: 250px;
       margin: 0 auto;
       margin-top: -10px;
       position: absolute;
@@ -235,10 +238,12 @@
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li><a href="#top">Home</a></li>
+              <!-- <li><a href="#design">Home</a></li> -->
               <li><a href="#about">About</a></li>
               <li><a href="#design">Design</a></li>
               <li><a href="#hobby">Hobby</a></li>
-              <!-- <li class="scroll-to-section"><a href="#services">Hobby</a></li> -->
+
+              <li class="scroll-to-section"><a href="#hobby"></a></li>
 
             </ul>
             <a class='menu-trigger'>
@@ -322,9 +327,10 @@
 
     <div class="col-md-8  mt-10 text text-center">
       <!-- <div class="aboutTitle">About</div> -->
-      <div class="img mb-2 mt-10" style="background-image: url(./assets/images/me.png);"></div>
+      <div class="img mb-2 mt-10" style="background-image: url(./assets/images/Open\ Peeps\ -\ Bust.png);"></div>
       <div class="desc">
-        <h2 class="subheadingname">Hello I'm Shih Ying&nbsp;&nbsp; <div class="name" style=" margin-top: 1.5rem ">鍾詩瀅
+        <h2 class="subheadingname" style="font-weight: 500;text-transform: none;letter-spacing: 0.1rem;">Hello I'm Shih
+          Ying <div class="name" style=" margin-top: 1.5rem ">鍾詩瀅
           </div>
         </h2>
 
@@ -338,21 +344,25 @@
 
         </div>
 
-        <p class="mb-4" style=" margin-top: 1.5rem ">2017-2020銘傳大學商業設計系</p>
+        <p class="mb-4" style=" margin-top: 1.5rem;font-size: 16px;font-weight: 400; ">2017-2020銘傳大學商業設計系</p>
         <!-- <p class="mb-4" style=" margin-top: 1.5rem;margin-bottom: 0rem!important "></p> -->
-        <p class="mb-4 aboutContent" style=" margin-bottom: 0rem!important "> ・能手刻RWD響應式網頁</p>
-        <p class="mb-4 aboutContent" style=" margin-top: 0rem!important;margin-bottom: 0rem!important ">
+        <p class="mb-4 aboutContent" style=" margin-bottom: 0rem!important;font-size: 16px;font-weight: 400; ">
+          ・能手刻RWD響應式網頁</p>
+        <p class="mb-4 aboutContent"
+          style=" margin-top: 0rem!important;margin-bottom: 0rem!important;font-size: 16px;font-weight: 400; ">
           ・JQuery、JS製作動態效果
         </p>
-        <p class="mb-4 aboutContent" style=" margin-top: 0rem!important;margin-bottom: 0rem!important ">
+        <p class="mb-4 aboutContent"
+          style=" margin-top: 0rem!important;margin-bottom: 0rem!important;font-size: 16px;font-weight: 400; ">
           ・熟悉CSS切版，能獨立完成
         </p>
-        <p class="mb-4 aboutContent" style=" margin-bottom: 0rem!important "> ・了解Float、Flex的排版方式</p>
+        <p class="mb-4 aboutContent" style=" margin-bottom: 0rem!important;font-size: 16px;font-weight: 400; ">
+          ・了解Float、Flex的排版方式</p>
         <!-- <p class="mb-4" style=" margin-top: 0rem!important;margin-bottom: 0rem!important "> 有基本後端的 PHP、MySQL語法知識 -->
 
 
 
-        <p class="mb-4  tool">使用工具</p>
+        <p class="mb-4  tool" style="font-size: 16px">使用工具</p>
         <div class="mb-4 toolIcon" style=" margin-top: 2.5rem ;margin-bottom: 0rem!important ">
           <svg class="toolSize " role="img" style=" fill:#1572B6;opacity: 0.7; " viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg">
@@ -447,7 +457,7 @@
 
         </div>
 
-        <div class="mb-4 toolIcon" style=" margin-top: 0.5rem ;margin-bottom: 2.5rem!important ">
+        <div class="mb-4 toolIcon" style=" margin-top: 0.5rem ;margin-bottom: 8.5rem!important ">
 
           <svg role="img" class="toolSize " height="2500" viewBox="0 0 200 300" width="1667"
             xmlns="http://www.w3.org/2000/svg">
@@ -570,335 +580,160 @@
   </div>
 
   <div class=" design  " id="design">
-    <div class="gallerySpace"></div>
-    <ul class="gallery-items">
-      <li class="gallery-item  ">
-        <div class="gallery-contents">
-          <div class="thumbnail gallery-trigger"><img src="./assets/images/web2.svg" alt="" /></div>
-          <div class="title">Loop 音樂網站</div>
+    <div id="wrapper">
 
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+
+          <section class="tiles">
+            <article class="style1">
+              <span class="image">
+                <img src="./assets/images/web2.svg" alt="" />
+              </span>
+
+
+              <a onclick="window.open('generic.html', '', );" style="color: #fff;cursor: pointer;">
+                <!-- <h2>Loop 音樂網站</h2> -->
+                <div class="content">
+                  <p style="color: #fff;font-size: 16px;letter-spacing: 0.2rem;">Loop 音樂網站</p>
+
+                </div>
+              </a>
+            </article>
+            <article class="style2">
+              <span class="image">
+                <img src="./assets/images/web1.svg" alt="" />
+              </span>
+              <a onclick="window.open('generic2.html', '', );" style="color: #fff;cursor: pointer;">
+                <!-- <h2>派樂星球 寵物網站</h2> -->
+                <div class="content">
+                  <p style="color: #fff;font-size: 16px;letter-spacing: 0.2rem;">派樂星球 寵物網站</p>
+                </div>
+              </a>
+            </article>
+            <article class="style3">
+              <span class="image">
+                <img src="./assets/images/web3.svg" alt="" />
+              </span>
+              <a onclick="window.open('generic3.html', '', );" style="color: #fff;cursor: pointer;">
+                <!-- <h2>RWD切版練習</h2> -->
+                <div class="content">
+                  <p style="color: #fff;font-size: 16px;letter-spacing: 0.2rem;">RWD切版練習</p>
+                </div>
+              </a>
+            </article>
+            <article class="style4">
+              <span class="image">
+                <img src="./assets/images/design3.png" alt="" />
+              </span>
+              <a onclick="window.open('generic4.html', '', );" style="color: #fff;cursor: pointer;">
+                <!-- <h2>網站排版設計</h2> -->
+                <div class="content">
+                  <p style="color: #fff;font-size: 16px;letter-spacing: 0.2rem;">網站排版設計</p>
+                </div>
+              </a>
+            </article>
+            <article class="style5">
+              <span class="image">
+                <img src="./assets/images/design5.svg" alt="" />
+              </span>
+              <a onclick="window.open('generic5.html', '', );" style="color: #fff;cursor: pointer;">
+                <!-- <h2>切版練習</h2> -->
+                <div class="content">
+                  <p style="color: #fff;font-size: 16px;letter-spacing: 0.2rem;">切版練習</p>
+                </div>
+              </a>
+            </article>
+            <article class="style6">
+              <span class="image">
+                <img src="./assets/images/design8.svg" alt="" />
+              </span>
+              <a onclick="window.open('generic6.html', '', );" style="color: #fff;cursor: pointer;">
+                <!-- <h2>銀行app介面設計</h2> -->
+                <div class="content">
+                  <p style="color: #fff;font-size: 16px;letter-spacing: 0.2rem;">銀行app介面設計</p>
+                </div>
+              </a>
+            </article>
+            <article class="style2">
+              <span class="image">
+                <img src="./assets/images/design1.svg" alt="" />
+              </span>
+              <a onclick="window.open('generic7.html', '', );" style="color: #fff;cursor: pointer;">
+                <!-- <h2>UI Kit</h2> -->
+                <div class="content">
+                  <p style="color: #fff;font-size: 16px;letter-spacing: 0.2rem;">UI Kit</p>
+                </div>
+              </a>
+            </article>
+            <article class="style3">
+              <span class="image">
+                <img src="./assets/images/design2.svg" alt="" />
+              </span>
+              <a onclick="window.open('generic8.html', '', );" style="color: #fff;cursor: pointer;">
+                <!-- <h2>UI Kit</h2> -->
+                <div class="content">
+                  <p style="color: #fff;font-size: 16px;letter-spacing: 0.2rem;">UI Kit</p>
+                </div>
+              </a>
+            </article>
+            <article class="style1">
+              <span class="image">
+                <img src="./assets/images/design6.png" alt="" />
+              </span>
+              <a onclick="window.open('generic9.html', '', );" style="color: #fff;cursor: pointer;">
+                <!-- <h2>治鬼堂 中藥包裝設計</h2> -->
+                <div class="content">
+                  <p style="color: #fff;font-size: 16px;letter-spacing: 0.2rem;">治鬼堂 中藥包裝設計</p>
+                </div>
+              </a>
+            </article>
+            <article class="style5">
+              <span class="image">
+                <img src="./assets/images/work.svg" alt="" />
+              </span>
+              <a href="#">
+                <!-- <h2>製作中</h2> -->
+                <div class="content">
+                  <p style="color: #fff;font-size: 16px;letter-spacing: 0.2rem;">製作中!</p>
+                </div>
+              </a>
+            </article>
+            <article class="style6">
+              <span class="image">
+                <img src="./assets/images/work.svg" alt="" />
+              </span>
+              <a href="#">
+                <!-- <h2>製作中</h2> -->
+                <div class="content">
+                  <p style="color: #fff;font-size: 16px;letter-spacing: 0.2rem;">製作中!</p>
+                </div>
+              </a>
+            </article>
+            <article class="style4">
+              <span class="image">
+                <img src="./assets/images/work.svg" alt="" />
+              </span>
+              <a href="#">
+                <!-- <h2>製作中</h2> -->
+                <div class="content">
+                  <p style="color: #fff;font-size: 16px;letter-spacing: 0.2rem;">製作中!</p>
+                </div>
+              </a>
+            </article>
+          </section>
         </div>
-        <div class="gallery-expander">
-          <div class="gallery-expander-contents">
-            <div class="gallery-trigger-close close">x</div>
-
-            <div class="col">
-              <div class="image"><img src="./assets/images/web2-2.svg" alt="" /></div>
-            </div>
-
-            <div class="col">
-              <div class="titleInner">Loop 音樂網站</div>
-              <div class="contents">
-                -個人獨立製作
-                <br>-電腦&手機(iphoneX)兩版
-                <br>-jQuery、js動態撰寫
-                <br>-網頁視覺排版配色設計、Adobe Xd切版 </div>
-              <button class="learnButton" onclick="window.open('https://shihying96.github.io/music-web/ ', '', );">Learn
-                More</button>
-            </div>
-
-          </div>
-        </div>
-      </li>
-      <li class="gallery-item ">
-        <div class="gallery-contents">
-          <div class="thumbnail gallery-trigger"><img src="./assets/images/web1.svg" alt="" /></div>
-          <div class="title">派樂星球 寵物電商網站</div>
-        </div>
-        <div class="gallery-expander">
-          <div class="gallery-expander-contents">
-            <div class="gallery-trigger-close close">x</div>
-
-            <div class="col">
-              <div class="image"><img src="./assets/images/web1-1.svg" alt="" /></div>
-            </div>
-
-            <div class="col">
-              <div class="titleInner">派樂星球 寵物電商網站</div>
-              <div class="contents">
-                -以團隊形式，完成一個簡易電商平台
-                <br>-能獨立完成RWD切版、用jQuery寫出動態效果
-                <br>-主要工作負責後端php連資料庫，有基礎後端php、MySQL知識
-                <br>-負責切版＆動態功能：網站公版（Navbar）、代遛服務頁、商品列表頁、專欄頁
-                &nbsp;&nbsp;&nbsp;<a
-                  style="color: rgb(124, 122, 122);text-decoration: underline !important;cursor: pointer;"
-                  onclick="window.open('https://shihying96.github.io/uiux-web-petlove-walking/', '', );">個人靜態切版連結</a>
-              </div>
-              <button class="learnButton"
-                onclick="window.open('https://drive.google.com/drive/u/0/folders/1ihU1Y2-a6EpswA8R9szN0_2KWKEROh1x ', '', );">Learn
-                More</button>
-
-            </div>
-          </div>
-      </li>
-
-      <li class="gallery-item ">
-        <div class="gallery-contents">
-          <div class="thumbnail gallery-trigger"><img src="./assets/images/web3.svg" alt="" /></div>
-          <div class="title">RWD切版練習</div>
-        </div>
-        <div class="gallery-expander">
-          <div class="gallery-expander-contents">
-            <div class="gallery-trigger-close close">x</div>
-
-            <div class="col">
-              <div class="image"><img src="./assets/images/web3-3.svg" alt="" /></div>
-            </div>
-
-            <div class="col">
-              <div class="titleInner">切版練習</div>
-              <div class="contents">
-                -利用線上既有網站進行切版練習
-                <br>-電腦、手機版兩種RWD製作
-                <br>-手刻 RWD 響應式網站
-
-              </div>
-              <button class="learnButton" onclick="window.open('https://shihying96.github.io/cake-web/ ', '', );">Learn
-                More</button>
-
-            </div>
-          </div>
-      </li>
-      <li class="gallery-item ">
-        <div class="gallery-contents">
-          <div class="thumbnail gallery-trigger"><img src="./assets/images/design3.png" alt="" /></div>
-          <div class="title">網站排版設計</div>
-        </div>
-        <div class="gallery-expander">
-          <div class="gallery-expander-contents">
-            <div class="gallery-trigger-close close">x</div>
-            <div class="col">
-              <div class="image"><img src="./assets/images/design4.png" alt="" /></div>
-            </div>
-            <div class="col">
-              <div class="titleInner">網站排版設計</div>
-              <div class="contents">
-                滑板網站排版設計
-              </div>
+      </div>
 
 
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="gallery-item ">
-        <div class="gallery-contents">
-          <div class="thumbnail gallery-trigger"><img src="./assets/images/design5.svg" alt="" /></div>
-          <div class="title">切版練習</div>
-        </div>
-        <div class="gallery-expander">
-          <div class="gallery-expander-contents">
-            <div class="gallery-trigger-close close">x</div>
-            <div class="col">
-              <div class="image"><img src="./assets/images/design5.svg" alt="" /></div>
-            </div>
-            <div class="col">
-              <div class="titleInner">切版練習</div>
-              <div class="contents">
-                -利用線上既有網站進行切版練習
-                <br>-電腦版一版
 
-
-              </div>
-              <button class="learnButton"
-                onclick="window.open('https://shihying96.github.io/ITRI-ICT-TechDay/', '', );">Learn
-                More</button>
-
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="gallery-item ">
-        <div class="gallery-contents">
-          <div class="thumbnail gallery-trigger"><img src="./assets/images/design8.svg" alt="" /></div>
-          <div class="title">銀行app介面設計</div>
-        </div>
-        <div class="gallery-expander">
-          <div class="gallery-expander-contents">
-            <div class="gallery-trigger-close close">x</div>
-            <div class="col">
-              <div class="image"><img src="./assets/images/design8.svg" alt="" /></div>
-            </div>
-
-            <div class="col">
-              <div class="titleInner">UI Kit</div>
-              <div class="contents">
-                銀行app介面設計
-              </div>
-              <button class="learnButton" onclick="window.open('detail.html', '', );">Learn
-                More</button>
-
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="gallery-item ">
-        <div class="gallery-contents">
-          <div class="thumbnail gallery-trigger"><img src="./assets/images/design1.svg" alt="" /></div>
-          <div class="title">UI Kit</div>
-        </div>
-        <div class="gallery-expander">
-          <div class="gallery-expander-contents">
-            <div class="gallery-trigger-close close">x</div>
-            <div class="col">
-              <div class="image"><img src="./assets/images/design1.svg" alt="" /></div>
-            </div>
-
-            <div class="col">
-              <div class="titleInner">UI Kit</div>
-              <div class="contents">
-                UI Kit設計
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="gallery-item ">
-        <div class="gallery-contents">
-          <div class="thumbnail gallery-trigger"><img src="./assets/images/design2.svg" alt="" /></div>
-          <div class="title">UI Kit</div>
-        </div>
-        <div class="gallery-expander">
-          <div class="gallery-expander-contents">
-            <div class="gallery-trigger-close close">x</div>
-            <div class="col">
-              <div class="image"><img src="./assets/images/design2.svg" alt="" /></div>
-            </div>
-            <div class="col">
-              <div class="titleInner">UI Kit</div>
-              <div class="contents">
-                UI Kit設計
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-      </li>
-
-
-      <li class="gallery-item ">
-        <div class="gallery-contents">
-          <div class="thumbnail gallery-trigger"><img src="./assets/images/design6.png" alt="" /></div>
-          <div class="title">治鬼堂 中藥包裝設計</div>
-        </div>
-        <div class="gallery-expander">
-          <div class="gallery-expander-contents">
-            <div class="gallery-trigger-close close">x</div>
-            <div class="col">
-              <div class="image"><img src="./assets/images/design7.png" alt="" /></div>
-            </div>
-            <div class="col">
-              <div class="titleInner">畢業專題-治鬼堂 中藥包裝設計</div>
-              <div class="contents">
-                主題概念是選擇六種現代人常出現的症狀:生氣鬼、愛哭鬼、<br>貪吃鬼、瞌睡鬼、冒失鬼、酒鬼，搭配能調理症狀的中藥配方，<br>來做設計。包裝部分為單盒包裝及組合包裝兩種包裝。中藥部分<br>為茶包設計及茶標籤設計。
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="gallery-item ">
-        <div class="gallery-contents">
-          <div class="thumbnail gallery-trigger"><img src="./assets/images/no.svg" alt="" /></div>
-          <div class="title">to be continued</div>
-        </div>
-        <!-- <div class="gallery-expander">
-          <div class="gallery-expander-contents">
-            <div class="gallery-trigger-close close">x</div>
-            <div class="col">
-              <div class="image"><img src="./assets/images/example/1.jpg" alt="" /></div>
-            </div>
-            <div class="col">
-              <div class="title">to be continued</div>
-              <div class="contents"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
-            </div>
-          </div>
-        </div> -->
-      </li>
-      <li class="gallery-item ">
-        <div class="gallery-contents">
-          <div class="thumbnail gallery-trigger"><img src="./assets/images/no.svg" alt="" /></div>
-          <div class="title">to be continued</div>
-        </div>
-        <!-- <div class="gallery-expander">
-          <div class="gallery-expander-contents">
-            <div class="gallery-trigger-close close">x</div>
-            <div class="col">
-              <div class="image"><img src="./assets/images/example/1.jpg" alt="" /></div>
-            </div>
-            <div class="col">
-              <div class="title">to be continued</div>
-              <div class="contents"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
-            </div>
-          </div>
-        </div> -->
-      </li>
-      <li class="gallery-item ">
-        <div class="gallery-contents">
-          <div class="thumbnail gallery-trigger"><img src="./assets/images/no.svg" alt="" /></div>
-          <div class="title">to be continued</div>
-        </div>
-        <!-- <div class="gallery-expander">
-          <div class="gallery-expander-contents">
-            <div class="gallery-trigger-close close">x</div>
-            <div class="col">
-              <div class="image"><img src="./assets/images/example/1.jpg" alt="" /></div>
-            </div>
-            <div class="col">
-              <div class="title">to be continued</div>
-              <div class="contents"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
-            </div>
-          </div>
-        </div> -->
-      </li>
-      <li class="gallery-item ">
-        <div class="gallery-contents">
-          <div class="thumbnail gallery-trigger"><img src="./assets/images/no.svg" alt="" /></div>
-          <div class="title">to be continued</div>
-        </div>
-        <!-- <div class="gallery-expander">
-          <div class="gallery-expander-contents">
-            <div class="gallery-trigger-close close">x</div>
-            <div class="col">
-              <div class="image"><img src="./assets/images/example/1.jpg" alt="" /></div>
-            </div>
-            <div class="col">
-              <div class="title">to be continued</div>
-              <div class="contents"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
-            </div>
-          </div>
-        </div> -->
-      </li>
-
-    </ul>
+    </div>
 
   </div>
-  <div class=" hobby  " id="hobby">
-  </div>
+  <!-- <div class=" hobby  " id="hobby">
+
+  </div> -->
   <!-- <div class="copyright text-center" style="background-color: #C4DCDE;">© Copyright ShihYing's Portfolio 2021.</div> -->
   <div id="gotop2" style="text-decoration: none;">
     ↑
@@ -941,7 +776,11 @@
       });
     });
   </script>
-
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
